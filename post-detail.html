@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global-colors.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/post-detail.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;700;900&display=swap"
       rel="stylesheet"
       preload
     />
@@ -25,12 +26,10 @@
             viewBox="0 0 24 24"
             preserveAspectRatio="xMidYMid meet"
           >
-            <path
-              fill="#35c5f0"
-              d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"
-            ></path>
+            <path fill="#35c5f0" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
           </svg>
         </div>
+
         <div class="logo">
           <svg
             class="icon"
@@ -56,13 +55,14 @@
             </g>
           </svg>
         </div>
+
         <div class="cart">
           <svg
             class="icon"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            stroke="transparent"
+            stroke="#transparent"
             fill="none"
             stroke-linejoin="round"
             stroke-width="2"
@@ -77,92 +77,36 @@
         </div>
       </div>
     </nav>
-
-    <div class="secondary-nav">
-      <ul class="nav-container">
-        <li class="nav-item active"><a href="#">스토어홈</a></li>
-        <li class="nav-item"><a href="#">베스트</a></li>
-        <li class="nav-item"><a href="#">오늘의딜</a></li>
-        <li class="nav-item new"><a href="#">방한템특가</a></li>
-        <li class="nav-item new"><a href="#">블프세일</a></li>
-        <li class="nav-item"><a href="#">지정일배송</a></li>
-        <li class="nav-item"><a href="#">프리미엄</a></li>
-        <li class="nav-item"><a href="#">기획전</a></li>
-      </ul>
-    </div>
-
     <section class="banner-container">
-      <img
-        src="https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/163730493914401758.jpg?gif=1&w=2560&q=100"
-        alt="겨울 필수 방한템 특가!"
-      />
-      <div class="indicators">
-        <button></button>
-      </div>
+      <img class="cover-image" alt="커버 이미지">
+    </img>
     </section>
 
-    <section class="today-house-container">
-      <div class="today-house-header">
-        <h1 class="title">오늘의 스토리</h1>
-        <a class="more" href="/post-list.html">더보기</a>
-      </div>
-      <div class="today-house-item-wrapper">
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house1.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>여행에서 영감받아 완성! 디자이너의 따뜻한 모던 하우스</h2>
-        </div>
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house2.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>24년 구축 아파트, 도화지 같은 집으로 리모델링하기</h2>
-        </div>
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house3.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>첫 독립이니까, 엔틱&프렌치 감성으로 채운 1.5룸</h2>
-        </div>
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house4.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>화사한 화이트톤 아파트에, 설레는 그린 트리🎄</h2>
-        </div>
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house5.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>소품 수집 만렙의 알록달록한, 취향과 감성의 공간</h2>
-        </div>
-        <div class="today-house-item">
-          <img
-            class="today-house-item-image"
-            src="./images/house6.jpg"
-            alt="오늘의 집들이 사진"
-          />
-          <h2>스타일링으로 따뜻한 신혼집이 된 오래된 아파트</h2>
-        </div>
-      </div>
-      <div class="side-bar">
-        <a href="/index.html">HOME</a>
-        <a href="/post-list.html">집들이</a>
-        <a href="/write.html">글작성</a>
-      </div>
-      <div class="back-drop"></div>
+    <section class="content-container">
+    
     </section>
+
+
+    <section class="main-contents-container">
+      <div class="contents-wrapper">
+        <p class="post-content">
+          안녕하세요. 가드너로 플로리스트로 일하며 식물과 함께 살고 있는 소피입니다. 10년 넘게 의류
+          브랜드 바잉 MD로 살다가 인테리어에 관심이 많아지면서 자연스럽게 식물을 접했어요. 식물의
+          매력을 알아버려서 이제는 살아있지 않은 것에 별로 매력을 느낄 수 없을 것 같아요. 물건은
+          조금만 잘못 만들어도 못 쓰는 게 되는데 식물은 아무렇게나 생겼어도 그게 다 각각의 매력이
+          되거든요. 같은 식물이라도 다 다르게 자라기 때문에 실제로 세상에서 하나뿐인 특별한 것이
+          되고요. 게다가 완전히 새로운 형태의 식물이 끊임없이 보여요. 그래서 지겨울 틈도 식상할 틈도
+          없어요.
+        </p>
+      </div>
+    </section>
+    <div class="side-bar">
+      <a href="/index.html">HOME</a>
+      <a href="/post-list.html">집들이</a>
+      <a href="/write.html">글작성</a>
+    </div>
+    <div class="back-drop"></div>
     <script src="./src/index.js" type="module"></script>
+    <script src="./src/postDetail.js" type="module"></script>
   </body>
 </html>
