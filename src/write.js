@@ -1,6 +1,7 @@
 export const POST_MAX_FILE_SIZE = 1000 * 1000 * 1;  // 약 1MB
 
 const $goBack = document.querySelector('.go-back');
+const $authorName = document.querySelector('.author-name');
 const $titleInput = document.querySelector('.title-input');
 const $contentInput = document.querySelector('.content-input');
 const $titleLength = document.querySelector('.current-title-length');
@@ -50,7 +51,7 @@ async function postSubmit(event) {
                 title: $titleInput.value,
                 content: $contentInput.value,
                 image: $coverImage.src,
-                author: '새로운 유저',
+                author: $authorName.value,
                 authorImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             })
         });
