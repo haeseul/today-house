@@ -1,3 +1,7 @@
+const $detailContainer = document.querySelector('.content-container')
+const $coverImage = document.querySelector('.cover-image')
+const $postContent = document.querySelector('.post-content')
+
 const postDetailTemplate = `  <div class="category">온라인 집들이</div>
 <div class="title">200개의 식물과 사는, 가드너의 빈티지 무드 하우스</div>
 
@@ -26,4 +30,24 @@ async function fetchPost(postId) {
     return data;
 }
 
-fetchPost(postId)
+// 단일 호출, 단일 응답
+fetchPost(postId).then((post) => {
+  $coverImage.src = post.image
+  $postContent.innerText = post.content
+  $detailContainer.innerHTML = `  <div class="category">온라인 집들이</div>
+    <div class="title">${post.title}</div>
+    
+    <div class="profile">
+      <div class="profile-image-container">
+        <img
+          src="${post.authorImage}"
+          alt="프로필 이미지"
+          class="profile-image"
+        />
+      </div>
+      <div class="profile-detail">
+        <span class="profile-detail-nickname">${post.author}</span>
+        <span class="profile-detail-date">2021년 11월 27일</span>
+      </div>
+    </div>`
+});
